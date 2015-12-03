@@ -98,7 +98,7 @@ class ApiController extends Controller {
                     }
                 }
                 $this->insertTweets($postData['city'], $result);
-                Yii::$app->cache->set($postData['city'], $result, 30);
+                Yii::$app->cache->set($postData['city'], $result, self::CACHE_TIME);
                 return ['success' => true, 'result' => $result];
             }  else {
                 return ['success' => true, 'result' => $data];
