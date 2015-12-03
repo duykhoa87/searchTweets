@@ -1,0 +1,17 @@
+<div class="row tweets-containner">
+    <h1>Hello {{ dashboard.username }}</h1>
+    <div id="map"></div>
+    <div class="form-search col-md-6 no-padding">
+        <form class="form-inline" role="form">
+            <div class="form-group col-xs-12 col-md-6 no-padding">
+                <input type="text" class="form-control" id="city" ng-model="search.city">
+            </div>
+            <div class="form-group col-md-3 col-xs-6 no-padding">
+                <button type="button" ng-click="onSearch()" class="btn btn-default btn-primary btn-block">Search</button>
+            </div>
+            <div class="form-group col-md-3 col-xs-6 no-padding">
+                <button type="button" ng-click="onHistory()" class="btn btn-default btn-primary btn-block">History</button>
+            </div>
+        </form>
+    </div>
+</div>
